@@ -10,7 +10,7 @@ TOKEN=$tokenOfYourOrganizationInGithub
 # User and Repository information
 REPO_OWNER=$1
 REPO_NAME=$2
-helper
+#helper
 
 # Function to make a GET request to the GitHub API
 function github_api_get {
