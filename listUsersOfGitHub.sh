@@ -10,6 +10,7 @@ TOKEN=$tokenOfYourOrganizationInGithub
 # User and Repository information
 REPO_OWNER=$1
 REPO_NAME=$2
+helper()
 
 # Function to make a GET request to the GitHub API
 function github_api_get {
@@ -40,3 +41,9 @@ function list_users_with_read_access {
 
 echo "Listing users with read access to ${REPO_OWNER}/${REPO_NAME}..."
 list_users_with_read_access
+function helper{
+    expectedCMDArgs=2
+    if [$# -ne $expectedCMDArgs]; then
+    echo "Please enter two args"
+    fi
+}
